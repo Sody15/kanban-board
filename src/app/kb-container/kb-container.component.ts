@@ -15,7 +15,6 @@ export class KbContainerComponent {
   @Input() column!: Column;
 
   drop(event: CdkDragDrop<string[]>) {
-    console.log(event);
     if (event.previousContainer === event.container) {
       moveItemInArray(
         event.container.data,
